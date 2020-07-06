@@ -13,7 +13,7 @@ def main():
     techniques = runner.AtomicRunner()
 
     ## Privilege Escalation
-    techniques.execute("T1546.004", position=0) # Add command to .bash_profile
+    techniques.execute("T1546.004", position=0, parameters=, True, True)
     techniques.execute("T1546.004", position=1) # Add command to .bashrc
     techniques.execute("T1053.003", position=0) # Cron - Replace crontab with referenced file
     techniques.execute("T1053.003", position=1) # Cron - Add script to cron folder
