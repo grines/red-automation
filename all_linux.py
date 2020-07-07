@@ -27,8 +27,10 @@ def main():
             print("---")
             pos = int(row[3]) - 1
             print(pos)
-
-            techniques.execute(row[1], position=pos, dependencies=True, cleanup=True)
+            try:
+                techniques.execute(row[1], position=pos, dependencies=True, cleanup=True)
+            except:
+                pass
     
 if __name__ == "__main__":
     main()
