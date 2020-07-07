@@ -20,9 +20,15 @@ def main():
         # Iterate over each row in the csv using reader object
         for row in csv_reader:
             # row variable is a list that represents a row in csv
+            print("---")
             print(row[1])
-            position = int(float(row[3] - 1))
-            techniques.execute(row[1], position=position, dependencies=True, cleanup=True)
+            print(row[2])
+            print(row[3])
+            print("---")
+            pos = int(row[3]) - 1
+            print(pos)
+
+            techniques.execute(row[1], position=pos, dependencies=True, cleanup=True)
     
 if __name__ == "__main__":
     main()
