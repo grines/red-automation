@@ -1,4 +1,3 @@
-Tactic,Technique #,Technique Name,Test #,Test Name,Test GUID,Executor Name
 privilege-escalation,T1546.004,.bash_profile and .bashrc,1,Add command to .bash_profile,94500ae1-7e31-47e3-886b-c328da46872f,sh
 privilege-escalation,T1546.004,.bash_profile and .bashrc,2,Add command to .bashrc,0a898315-4cfa-4007-bafe-33a4646d115f,sh
 privilege-escalation,T1053.003,Cron,1,Cron - Replace crontab with referenced file,435057fb-74b1-410e-9403-d81baf194f75,bash
